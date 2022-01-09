@@ -50,9 +50,6 @@ begin
             );
             
     symboles <= (hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg("00" & zone));
---    symboles <= (hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg(to_unsigned(0, 4)), hex_to_7seg(to_unsigned(0, 4)));
---    symboles <= (hex_2_7seg(to_unsigned(0, 4)), hex_2_7seg(to_unsigned(0, 4)), hex_2_7seg(to_unsigned(0, 4)), hex_2_7seg("00" & zone)));
-
  
    -- Circuit pour sérialiser l'accès aux quatre symboles à 7 segments.
    -- L'affichage contient quatre symboles chacun composé de sept segments et d'un point.

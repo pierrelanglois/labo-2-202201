@@ -2,7 +2,7 @@
 --
 -- musee_labo_2_tb
 --
--- v. 2.1 2021-01-08 Pierre Langlois version à compléter pour le labo 2
+-- v. 2.1 2022-01-08 Pierre Langlois version à compléter pour le labo 2
 --
 -------------------------------------------------------------------------------
 

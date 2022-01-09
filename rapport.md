@@ -16,7 +16,7 @@ Voici un lien vers notre fichier modifié : [musee_labo_2.vhd](sources/musee_lab
 
 ## Partie 2 : Banc d'essai
 
-Voici un lien vers notre fichier modifié : [musee_labo_2_TB.vhd](sources/musee_labo_2_TB.vhd).
+Voici un lien vers notre fichier modifié : [musee_labo_2_tb.vhd](sources/musee_labo_2_tb.vhd).
 
 Afin de pouvoir vérifier notre module, nous avons adopté la stratégie ...
 

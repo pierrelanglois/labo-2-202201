@@ -4,7 +4,7 @@
 # Il faut d'abord ouvrir une fenêtre d'invite de commande (dans Windows : cmd).
 # Ensuite naviguer dans le bon répertoire, par exemple user\docs\poly\inf3500\labo2\synthese-implementation
 #
-# On peut lancer Vivado avec la commande "C:\Xilinx\Vivado\2020.1\bin\vivado -mode tcl"
+# On peut lancer Vivado avec la commande "C:\Xilinx\Vivado\2021.1\bin\vivado -mode tcl"
 # (** doit correspondre à la version de Vivado que vous avez installée **)
 #
 # Ensuite, on peut copier-coller les commandes du présent fichier une à une ou en groupe,

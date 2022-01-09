@@ -46,7 +46,7 @@ Ce laboratoire s'appuie sur et complémente le matériel suivant :
 
 Le musée des beaux arts de Longueuil expose une vaste collection de photos du tournoi de chasse au chevreuil. Les photos sont réparties dans 16 salles d'exposition numérotées de 0 à 15 inclusivement, et les salles sont groupée en quatre zones. La zone 00 regroupe les salles 0 à 3, la zone 01 les sales 4 à 7, la zone 10 les salles 8 à 11, et la zone 11 les salles 12 à 15. Chaque salle est munie d’un détecteur de mouvement, dont le numéro est le même que la salle qu'il surveille.
 
-Pendant la nuit, deux gardiens patrouillent le musée en tout temps. Une alarme `alarme_intrus` doit être déclenchée quand au moins trois détecteurs de mouvement sont actifs, indiquant qu'il y a un intrus en plus des deux gardiens. Une alarme `alarme_jasette` doit être déclenchée quand un seul détecteur de mouvement est actif, indiquant que les deux gardiens sont dans la même salle et ne font pas leur travail. Une alarme `alarme_greve` doit être déclenché quand aucun détecteur de mouvement n'est actif, indiquant que les deux gardiens ont quitté.
+Pendant la nuit, deux gardiens patrouillent le musée en tout temps. Une alarme `alarme_intrus` doit être déclenchée quand au moins trois détecteurs de mouvement sont actifs, indiquant qu'il y a un intrus en plus des deux gardiens. Une alarme `alarme_jasette` doit être déclenchée quand un seul détecteur de mouvement est actif, indiquant que les deux gardiens sont dans la même salle et ne font pas leur travail. Une alarme `alarme_greve` doit être déclenché quand aucun détecteur de mouvement n'est actif, indiquant que les deux gardiens ont quitté leur poste.
 
 Faites la conception du système de contrôle des détecteurs de mouvement. Complétez la définition du fichier [musee_labo_2.vhd](sources/musee_labo_2.vhd) et remettez-le. **N'apportez aucun changement aux noms des entités, aux noms des architectures ni à la liste des ports ni à leurs noms.**
 
@@ -62,7 +62,7 @@ Vérifiez le fonctionnement correct de votre code de la partie 1 avec votre banc
 
 ## Partie 3 : Synthèse et implémentation sur la carte
 
-Confirmez que vous avez bien importé et ajouté les fichiers suivants dans votre répertoire de projet `inf3500\labo2`. Ne les modifiez pas.
+Confirmez que vous avez bien importé et ajouté les fichiers suivants dans votre répertoire de projet `inf3500\labo-2`. Ne les modifiez pas.
 
 - sources\top_labo_2.vhd
 - sources\utilitaires_inf3500_pkg.vhd
@@ -99,7 +99,7 @@ Modifiez vos fichiers [musee_labo_2.vhd](sources/musee_labo_2.vhd) et [musee_lab
 
 ### 4b. Étude de l'utilisation des ressources de votre module selon le nombre d'entrées
 
-Faites plusieurs synthèses (et non l'implémentation au complet) de votre module musee_labo_2.vhd uniquement (et non le module basys-3-top.vhd) pour différents nombres de salles et de zones (il y a toujours quatre salles par zone). Obtenez un rapport des ressources utilisées avec les commandes suivantes :
+Faites plusieurs synthèses (et non l'implémentation au complet) de votre module musee_labo_2 uniquement (et non du module top_labo_2) pour différents nombres de salles et de zones (il y a toujours quatre salles par zone). Obtenez un rapport des ressources utilisées avec les commandes suivantes :
 
 `synth_design -top musee_labo_2 -generic N=**un-nombre-ici** -part xc7a35tcpg236-1 -assert`  
 `report_utilization -file monrapport.txt` (pour créer un nouveau fichier) ou `report_utilization -file monrapport.txt -append` (pour ajouter au fichier à chaque itération)
@@ -124,15 +124,15 @@ Le barème de correction est progressif. Il est relativement facile d'obtenir un
 
 Critères | Points
 -------- | ------
-Partie 1 : votre module final dans le fichier musee_labo_2.vhd | 5
-Partie 2 : votre banc d'essai complet dans le fichier musee_labo_2_tb.vhd | 8
+Partie 1 : votre module final dans le fichier musee_labo_2.vhd | 6
+Partie 2 : votre banc d'essai complet dans le fichier musee_labo_2_tb.vhd | 7
 Partie 3 : votre fichier top_labo_2.bit | 2
 Qualité, lisibilité et élégance du code : alignement, choix des identificateurs, qualité et pertinence des commentaires, respect des consignes de remise incluant les noms des fichiers, orthographe, etc. | 2
 Pleine réussite du labo | 17
 
 Bonus | Points
 ----- | ------
-Partie 4a : vos fichiers musee_labo_2.vhd et musee_labo_2_tb modifiés | 2
+Partie 4a : vos fichiers musee_labo_2.vhd et musee_labo_2_tb.vhd modifiés | 2
 Partie 4b : vos données sous forme tabulaire et graphique dans votre fichier [rapport.md](rapport.md), une analyse et une discussion | 1
 Maximum possible sur 20 points | 20
 

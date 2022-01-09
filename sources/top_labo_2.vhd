@@ -38,7 +38,7 @@ signal symboles : quatre_symboles;
 begin
     
     -- instanciation de l'unité du musée
-	UUT : entity musee_labo_2(arch)
+    UUT : entity musee_labo_2(arch)
         generic map (N => N_salles)
         port map (
             detecteurs_mouvement => sw(15 downto 0),
